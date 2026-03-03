@@ -22,11 +22,15 @@ body {
     line-height: 36px;
     letter-spacing: -0.25px;
     font-family: "Source Sans 3", sans-serif;
+    text-decoration: none;
+    color: inherit;
 }
 .nav-links {
     display: flex;
     gap: 28px;
     list-style: none;
+    padding: 0;
+    margin: 0;
 }
 .nav-links a {
     font-weight: normal;
@@ -40,7 +44,7 @@ body {
     font-size: 28px;
 }
 .main-container {
-    max-width: 574px;
+    max-width: 590px;
     text-align: center;
     margin: 70px auto 0 auto;
 }
@@ -64,5 +68,70 @@ body {
 }
 .image-container img {
     width: 100%;
+    height: auto;
     display: block;
+}
+/* ==== DESKTOP ==== */
+@media screen and (max-width: 1440px) {
+    .main-container h1 {
+        font-size: 90px;
+        line-height: 102px;
+        letter-spacing: -2px;
+    }  
+    .image-container {
+        max-width: 864px;
+        margin-left: auto;
+        margin-right: auto;
+        padding: 0 20px;
+    }
+}
+/* ==== TABLET ==== */
+@media screen and (max-width: 768px) {
+    .main-container h1 {
+        font-size: 72px;
+        line-height: 82.8px;
+        letter-spacing: -1.6px;
+    }
+    .main-container {
+        margin-top: 60px;
+    }
+    .logo {
+        font-weight: bold;
+    }
+    .image-container img {
+        height: 800px;
+        width: 768px;
+        margin: 0 auto;
+        padding: 0 20px;
+    }
+}
+/* ==== MOBILE ==== */
+@media screen and (max-width: 320px) {
+    .nav-links {
+        display: none;
+    }
+    .menu-icon {
+        display: block;
+    }
+    .logo {
+        font-weight: bold;
+    }
+    .main-container {
+        margin-top: 40px;
+    }
+    .main-container h1 {
+        font-size: 36px;
+        line-height: 39.6px;
+        letter-spacing: -0.8px;
+    }
+    .main-container p {
+        font-size: 12px;
+        line-height: 18px;
+    }
+    .image-container img {
+        height: 350px;
+        width: 320px;
+        margin: 0 auto;
+        padding: 0 20px;
+    }
 }
