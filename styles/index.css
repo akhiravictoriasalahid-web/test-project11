@@ -1,0 +1,68 @@
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+body {
+    margin: 0;
+    color: #242635;
+}
+.container {
+    max-width: 864px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+.nav-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+}
+.logo {
+    font-weight: normal;
+    font-size: 24px;
+    line-height: 36px;
+    letter-spacing: -0.25px;
+    font-family: "Source Sans 3", sans-serif;
+}
+.nav-links {
+    display: flex;
+    gap: 28px;
+    list-style: none;
+}
+.nav-links a {
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 22.4px;
+    text-decoration: none;
+    color: #242635;
+}
+.menu-icon {
+    display: none;
+    font-size: 28px;
+}
+.main-container {
+    max-width: 574px;
+    text-align: center;
+    margin: 70px auto 0 auto;
+}
+.main-container h1 {
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-size: 90px;
+    line-height: 102px;
+    letter-spacing: -2px;
+    margin: 0;
+}
+.main-container p {
+    font-family: "Source Sans 3", sans-serif;
+    font-weight: normal;
+    font-size: 22px;
+    line-height: 33px;
+    margin-top: 30px;
+}
+.image-container {
+    margin-top: 47px;
+}
+.image-container img {
+    width: 100%;
+    display: block;
+}
