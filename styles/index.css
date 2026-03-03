@@ -24,6 +24,7 @@ body {
     font-family: "Source Sans 3", sans-serif;
     text-decoration: none;
     color: inherit;
+    transition: all 0.3s ease;
 }
 .nav-links {
     display: flex;
@@ -38,6 +39,7 @@ body {
     line-height: 22.4px;
     text-decoration: none;
     color: #242635;
+    transition: all 0.3s ease;
 }
 .menu-icon {
     display: none;
@@ -70,6 +72,19 @@ body {
     width: 100%;
     height: auto;
     display: block;
+    transition: transform 0.5s ease;
+}
+/* ===== HOVER ==== */
+.nav-links a:hover {
+    color: blue;
+    opacity: 0.6;
+}
+.image-container img:hover {
+    transform: scale(1.05);
+}
+.logo:hover {
+    color: #000;
+    opacity: 0.6;
 }
 /* ==== DESKTOP ==== */
 @media screen and (max-width: 1440px) {
@@ -101,8 +116,6 @@ body {
     .image-container img {
         height: 800px;
         width: 768px;
-        margin: 0 auto;
-        padding: 0 20px;
     }
 }
 /* ==== MOBILE ==== */
@@ -131,7 +144,5 @@ body {
     .image-container img {
         height: 350px;
         width: 320px;
-        margin: 0 auto;
-        padding: 0 20px;
     }
 }
